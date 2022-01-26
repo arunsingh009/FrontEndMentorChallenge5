@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: hsl(185, 75%, 39%); 
+    overflow: hidden;
+}
+.box1::before{
+    content :"";
+    height: 60vh;
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:url(./images/bg-pattern-top.svg) ;
+    background-position-x:-50px;
+    background-position-y:-300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+}
+.box2::before{
+    content:"";
+    height: 50vh;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    /* border: 2px solid black; */
+    background-size: cover;
+    background: url(./images/bg-pattern-bottom.svg);
+    z-index: -1;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.card{
+    height: 400px;
+    width: 350px;
+    /* border: 2px solid black; */
+    margin: auto;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    overflow: hidden;
+}
+.text{
+    height: 200px;
+    width: 100%;
+    position: relative;
+    top: -43px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.name{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.text h1{
+    font-size: 26px;
+    color: hsl(229, 23%, 23%);
+}
+.age{
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+.text h2{
+    font-size: 20px;
+    color: hsl(227, 10%, 46%);
+    font-weight: 400;
+}
+.stat{
+    height: 100px;
+    width: 100%;
+    border-top: .1px solid hsl(227, 10%, 46%);
+}
+.stat ul{
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+.stat ul li :nth-child(1){
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+.stat ul li :nth-child(2){
+    font-size: 15px;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+
+}
+
+.profileImage{
+    width: 80px;
+    height: 80px;
+    border-radius:100%;
+    position: relative;
+    top:-40px;
+    left: 35%;
+    border: 5px solid white;
+}   
+@media(max-width:900px){
+    .box1::before{
+        width: 70%;
+        background-position-x:-205px;
+        background-position-y:-160px;
+    }
+
+}
