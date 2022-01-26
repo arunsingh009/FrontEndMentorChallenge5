@@ -29,7 +29,7 @@ Frontend Mentor | Profile card component
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/arunsingh009/FrontEndMentorChallenge5)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://arunsingh009.github.io/FrontEndMentorChallenge5/)
 
 ## My process
 
